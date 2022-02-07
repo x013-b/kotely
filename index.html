@@ -6,10 +6,43 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Kotely</title>
+
+        <!-- na razie w tym samym pliku co strona i na 5s --> 
+        <script language="javascript">
+            function timer(){
+               let img = document.getElementById('img');
+               let hide = document.getElementById('hide');
+               let imgh = document.getElementById('imgh');
+               let time = 5000;
+
+               img.hidden = true;
+
+
+               function picture(){
+                   img.hidden = false;
+                   hide.hidden = true;
+                   imgh.hidden = true;
+               }
+               setTimeout(()=> {
+                  picture();
+                   
+               }, time)
+    
+            }
+        </script>
+
     </head>
-    <body>
-        <h3>Bedi (Kot Detektyw)</p>
-        <img src="https://cdn.discordapp.com/attachments/845632919979687946/939976159540699156/IMG_20220206_210614.jpg">
+
+    <body onload="timer()";>
+        <div id="content">
+            <h3 id="hide">Bedi (Kot Detektyw)</p></h3>
+            <img id="imgh" src="https://cdn.discordapp.com/attachments/845632919979687946/939976159540699156/IMG_20220206_210614.jpg">
+
+
+            <img id="img" src="axolotl.svg">
+
+        </div>
+        
         
     </body>
 </html>
