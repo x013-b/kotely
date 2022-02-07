@@ -5,9 +5,15 @@
     font-family: 'Poppins', sans-serif;
 }
 
-img {
+#imgh {
     width: 25%;
     height: auto;
     border: 1px;
     border-color: black;
 }
+
+#content {
+    height: 100%;
+    width: 100%;
+}
+
